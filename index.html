@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>Yoga</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <nav> 
+                    <a href="#" class="logo"><img src="./img/logo.png" alt="logo" class="logo-img"></a>                   
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li>
+                            <a class="menu__item" href="#aboutus">About us</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#reservation">Reservation</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#gallery">Gallery</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#blog">Blog</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#elements">Elements</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#shop">Shop</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </nav>
+            </div>         
+        </div>
+    </header>
+
+    <main id="reservation">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="main" id="yoga">
+                <form>
+                    <fieldset>
+                        <p class="title-form">Trial class</p>
+                        <div class="form-input">
+                            <input type="text" id="name" required  placeholder="Enter your name">
+                            <input type="phone" id="phone" required  placeholder="Enter your phone">
+                            <select required>
+                                <option>Chose your class</option>
+                                <option>Yoga for health</option>
+                                <option>Yoga for lose weight</option>
+                                <option>Yoga for children</option>
+                                <option>Yoga for adults</option>
+                            </select>
+                            <button type="submit" class="btn-form">Try it</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="main-title">
+                    <h1>Just balance <br class="br-max">your mind & body</h1>
+                    <h4>Create the healthy living for yourself</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <h2 id="elements">Yoga feature program</h2>
+        <h3>Our Classes</h3>
+        <div class="supercard">
+            <div class="card">
+                <div class="foto" style="background: url(../img/img-01.jpg) center center/cover no-repeat"></div>
+                <div class="card-title">
+                    <div class="title-card">
+                        <a href="#yoga">Yoga for health</a>
+                    </div>
+                    <div class="subtitle-card">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqueip ex ea commodo consequat consectetur adipsicing elit, sed do eiusmod tempor incididunt.</div>
+                    <p>Ashtanga-Hatha</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="foto" style="background: url(../img/img-02.jpg) center center/cover no-repeat"></div>
+                <div class="card-title">
+                    <div class="title-card">
+                        <a href="#yoga">Yoga for lose weight</a></div>
+                    <div class="subtitle-card">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqueip ex ea commodo consequat consectetur adipsicing elit, sed do eiusmod tempor incididunt.</div>
+                    <p>Ashtanga-Hatha</p>
+                </div>                    
+            </div>
+
+            <div class="card">
+                <div class="foto" style="background: url(../img/img-03.jpg) center center/cover no-repeat"></div>
+                <div class="card-title">
+                    <div class="title-card">
+                        <a href="#yoga">Yoga for children</a>
+                    </div>
+                    <div class="subtitle-card">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqueip ex ea commodo consequat consectetur adipsicing elit, sed do eiusmod tempor incididunt.</div>
+                    <p>Ashtanga-Hatha</p>
+                </div>                   
+            </div>
+
+            <div class="card">
+                <div class="foto" style="background: url(../img/img-04.jpg) center center/cover no-repeat"></div>
+                <div class="card-title">
+                    <div class="title-card">
+                        <a href="#yoga">Yoga for elderly</a>
+                    </div>
+                    <div class="subtitle-card">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqueip ex ea commodo consequat consectetur adipsicing elit, sed do eiusmod tempor incididunt.</div>
+                    <p>Ashtanga-Hatha</p>
+                </div>                    
+            </div>
+        </div> 
+    </div>
+
+    <div class="bcg-img" id="gallery">
+        <div class="bcg-img-05">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span>
+        </div>
+        </div>
+        <div class="bcg-img-06">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+        <div class="bcg-img-07">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+        <div class="bcg-img-08">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+        <div class="bcg-img-09">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+        <div class="bcg-img-10">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+        <div class="bcg-img-11">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+        <div class="bcg-img-12">
+            <div class="overlay-bcg"><span class="icon-zoom-in"></span></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about" id="aboutus">
+            <div class="aboutus">
+                <h2 class="us">About us</h2>
+                <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum explicabo voluptatem, ad ipsum iste labore delectus laboriosam consequuntur magnam voluptates pariatur inventore quod quos architecto illum nemo! Eveniet, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit loting.</div>
+            </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./img/img-13.jpg" class="d-block w-100" alt="img-13">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/img-10-1.jpg" class="d-block w-100" alt="img-13">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./img/img-08-1.jpg" class="d-block w-100" alt="img-13">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="advantag" id="blog">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="advantages">
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-01.png" alt="ico-01">
+                    </div>
+                    <div class="title-card title-card-white">improved overall health</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-02.png" alt="ico-02">
+                    </div>
+                    <div class="title-card title-card-white">increased concentration</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-03.png" alt="ico-03" style="top: 7px">
+                    </div>
+                    <div class="title-card title-card-white">blance <br/> your mind</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-04.png" alt="ico-04">
+                    </div>
+                    <div class="title-card title-card-white">sleep <br/> better</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-05.png" alt="ico-05">
+                    </div>
+                    <div class="title-card title-card-white">weight loss</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-06.png" alt="ico-06" style="top: 7px">
+                    </div>
+                    <div class="title-card title-card-white">strengthens <br/> your bones</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-07.png" alt="ico-07">
+                    </div>
+                    <div class="title-card title-card-white">increased <br class="br-max">flexbility</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+                <div class="cards">
+                    <div class="icons">
+                        <img src="./img/ico-08.png" alt="ico-08">
+                    </div>
+                    <div class="title-card title-card-white">lower blood <br class="br-max">pressure</div>
+                    <div class="subtitle-card subtitle-card-white">Enim ad minim veniam, quis nostrud exercitiajn toui ullamcomi laboris nisi ut aliquip ex ea com.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="price" id="shop">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="prices">
+                <div class="prices-card">
+                    <div class="card-header"><sup>$</sup>49 <sub>/ month</sub></div>
+                    <div class="card-content">
+                        <div class="date">Entry date: mon - fri</div>
+                        <hr>
+                        <div class="time">Entry time: 8a.m - 8p.m</div>
+                        <hr>
+                        <div class="advicer">Nutrition advicer: No</div>
+                        <hr style="opacity: 0;">
+                        <button class="btn-buy">Buy now</button>
+                    </div>
+                </div>
+                <div class="prices-card">
+                    <div class="card-header"><sup>$</sup>69 <sub>/ month</sub></div>
+                    <div class="card-content">
+                        <div class="date">Entry date: mon - fri</div>
+                        <hr>
+                        <div class="time">Entry time: 8a.m - 8p.m</div>
+                        <hr>
+                        <div class="advicer">Nutrition advicer: Yes</div>
+                        <hr style="opacity: 0;">
+                        <button class="btn-buy">Buy now</button>
+                    </div>
+                </div>
+                <div class="prices-card">
+                    <div class="card-header"><sup>$</sup>99 <sub>/ month</sub></div>
+                    <div class="card-content">
+                        <div class="date">Entry date: mon - sun</div>
+                        <hr>
+                        <div class="time">Entry time: 8a.m - 8p.m</div>
+                        <hr>
+                        <div class="advicer">Nutrition advicer: No</div>
+                        <hr style="opacity: 0;">
+                        <button class="btn-buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-about">
+                    <div class="title-card title-card-white title-about">About</div>
+                    <div class="subtitle-card subtitle-card-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum dicta porro dignissimos voluptatibus repreh enderit
+                        <span class="footer-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam obcaecati harum commodi ex ea Reprehenderit minima.</span>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="title-card title-card-white title-about">Contact us</div>
+                    <div class="contact">
+                        <div class="footer__info">
+                            <span class="icon-location"></span>
+                            <div class="contact-padding">
+                                <address class="footer__addr">5419 Josef Mountains Apt.716</address>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <span class="icon-phone"></span>
+                            <div class="contact-padding">
+                                <a class="footer__phone" href="tel:+123456789">+1 234 567 89</a>
+                                <br>
+                                <a class="footer__phone" href="tel:+123467890">+1 234 678 90</a>
+                            </div>                            
+                        </div>
+                        <div class="footer__info">
+                            <span class="icon-envelop"></span>
+                            <a class="footer__phone" href="email:joga.info@example.com">joga.info@example.com</a>
+                        </div>
+                        <div class="footer__info">
+                            <span class="icon-dribbble"></span>
+                            <a class="footer__phone" href="https://www.example.com/">www.example.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-item order-inst">
+                        <span class="icon-linkedin2"></span>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <span class="icon-twitter"></span>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <span class="icon-google-plus3"></span>
+                    </a>
+                    <a href="#" class="footer__social-item order-pint">
+                        <span class="icon-pinterest"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright  &copy;  2016-2017 Yoga classes
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

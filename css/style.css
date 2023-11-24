@@ -1,0 +1,588 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    background-color: white;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+}
+
+main {
+    position: relative;
+    min-width: 320px;
+    background: url(../img/bg-01.jpg) center center/cover no-repeat;
+    /* filter: blur(1px); */
+    margin: 100px 0 0 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 255, 0.8); /* Біла непрозора накладка з прозорістю 0.8 */
+    pointer-events: none; /* Заборонити взаємодію з накладкою (не блокує події) */
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset {
+    display: block;
+    position: relative;
+    width: 290px;
+    height: 395px;
+    margin-top: 26px;
+    padding: 30px 30px 36px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+.title-form {
+    color: rgb(80, 101, 220);
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+input, select {
+    width: 100%;
+    height: 50px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    padding: 13px;
+}
+/* Змінюємо dropdown (випадаюче окно) */
+
+.btn-form {
+    display: block;
+    position: relative;
+    justify-content: end;
+    width: 170px;
+    height: 50px;
+    top: 20px;
+    left: 60px;
+    background-color: rgba(80, 101, 220, .9);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+.br-max {
+    display: none;
+}
+h3, h4 {
+    font-family: 'Freehand', cursive;
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 {
+    margin: 30px 0 20px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+}
+h2 {
+    margin: 10px 0 0 0;
+    color: rgb(80, 101, 220);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+h3 {
+    margin: 10px 0 16px 0;
+    color: #333333a6;
+    font-size: 32px;
+}
+h4 {
+    margin-bottom: 50px;
+    padding: 0 25px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.supercard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    max-height: 550px;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+.foto {
+    width: 310px;
+    height: 310px;
+}
+.card-title {
+    margin: 10px 30px;
+    color: #333333ef;
+}
+.title-card {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.title-card a {
+    text-decoration: none;
+    color: #333333de;
+}
+.title-card:hover > a {
+    color: rgb(80, 101, 220);
+}
+
+.subtitle-card {
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+}
+
+p {
+    color: #333333ab;
+}
+
+.bcg-img {
+    max-width: 1400px; /* Забезпечте повну ширину контейнера для фотографій */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.overlay-bcg {
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-zoom-in {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.icon-zoom-in::before {
+    content: "\e986";
+    position: relative;
+    top: 12px;
+    left: 14px;
+    font-size: 14px;
+    color: rgb(80, 101, 220);
+}
+
+.bcg-img > div {
+    flex: 1 0 25%; /* Розділіть простір на три колонки */
+    margin: 0; /* Знищте внутрішні відступи */
+    overflow: hidden;
+}
+.bcg-img-05, .bcg-img-06, .bcg-img-07, .bcg-img-08, .bcg-img-09, .bcg-img-10, .bcg-img-11, .bcg-img-12 {
+    min-height: 120px;
+    min-width: 160px;
+}
+.bcg-img-05:hover .overlay-bcg, .bcg-img-06:hover .overlay-bcg,.bcg-img-07:hover .overlay-bcg,
+.bcg-img-08:hover .overlay-bcg, .bcg-img-09:hover .overlay-bcg, .bcg-img-10:hover .overlay-bcg,
+.bcg-img-11:hover .overlay-bcg, .bcg-img-12:hover .overlay-bcg  {
+    opacity: 1;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.bcg-img-05:hover, .bcg-img-06:hover, .bcg-img-07:hover, .bcg-img-08:hover, 
+.bcg-img-09:hover, .bcg-img-10:hover, .bcg-img-11:hover, .bcg-img-12:hover {
+    transform: scale(1.1);
+}
+
+
+.bcg-img-05 {
+    background: url(../img/img-05.jpg) center center/cover no-repeat;
+}
+.bcg-img-06 {
+    background: url(../img/img-06.jpg) center center/cover no-repeat;
+}
+.bcg-img-07 {
+    background: url(../img/img-07.jpg) center center/cover no-repeat;
+}
+.bcg-img-08 {
+    background: url(../img/img-08.jpg) center center/cover no-repeat;
+}
+.bcg-img-09 {
+    background: url(../img/img-09.jpg) center center/cover no-repeat;
+}
+.bcg-img-10 {
+    background: url(../img/img-10.jpg) center center/cover no-repeat;
+}
+.bcg-img-11 {
+    background: url(../img/img-11.jpg) center center/cover no-repeat;
+}
+.bcg-img-12 {
+    background: url(../img/img-12.jpg) center center/cover no-repeat;
+}
+
+.us {
+    text-align: left;
+}
+.lorem {
+    color: #333333ef;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.carousel {
+    margin: 25px auto;
+    width: 270px;
+}
+.carousel-inner {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.w-100 {
+    height: 150px;
+}
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 54px;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+.carousel-control-prev {
+    left: -30px;
+}
+.carousel-control-next {
+    right: -30px;
+}
+.carousel-control-prev > span,
+.carousel-control-prev > span::after {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    top: 20px;
+    right: 20px;
+    background-color:rgb(80, 101, 220);
+    transform: rotate(-45deg);
+}
+.carousel-control-prev > span::after {
+    content: '';
+    top: 7px;
+    right: 7px;
+    transform: rotate(-90deg);
+}
+.carousel-control-next > span,
+.carousel-control-next > span::after {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    top: 20px;
+    left: 20px;
+    background-color:rgb(80, 101, 220);
+    transform: rotate(45deg);
+}
+.carousel-control-next > span::after {
+    content: '';
+    top: 7px;
+    left: 7px;
+    transform: rotate(90deg);
+}
+
+.advantag {
+    position: relative;
+    min-width: 320px;
+    background: url(../img/bg-02.jpg) center center/cover no-repeat;
+    text-align: center;
+}
+.advantag > .overlay {
+    background: rgba(100, 100, 255, 0.8);
+}
+
+.advantages {
+    margin: 35px 0;
+}
+.cards {
+    margin: 40px 0;
+}
+
+.icons {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+.icons > img {
+    position: relative;
+    max-width: 80%;
+    top: 18px;
+}
+
+
+.title-card-white {
+    margin-top: 28px;
+    padding: 0 40px;
+    color: white;
+}
+.subtitle-card-white {
+    margin-top: 10px;
+    color: white;
+}
+
+.price {
+    position: relative;
+    /* height: 745px; */
+    min-width: 320px;
+    background: url(../img/bg-03.jpg) center center/cover no-repeat;
+    /* filter: blur(1px); */
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.price > .overlay {
+    background: rgba(100, 100, 255, 0.1);
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 35px 0;   
+}
+.prices-card {
+    width: 290px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color:rgb(80, 101, 220);
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+sup {
+    top: -7px;
+    right: 10px;
+    font-size: 22px;
+}
+sub {
+    top: 14px;
+    left: 10px;
+    font-size: 15px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    padding: 50px 20px;
+    background-color: white;
+    color: #333333e7;
+    font-size: 18px;
+}
+.card-content > hr {
+    height: 1px;
+    width: 90px;
+    background-color: black;
+}
+
+.btn-buy {
+    height: 50px;
+    width: 170px;
+    border: none;
+    border-radius: 20px;
+    background-color:rgba(80, 101, 220, .9);
+    color: white;
+    font-weight: 700;
+}
+.btn-buy:hover {
+    background-color:rgb(80, 101, 220);
+
+}
+
+footer {
+    background-color:rgba(80, 101, 220, .9);
+}
+.footer {
+    height: 555px;
+}
+.title-about {
+    padding: 0 0 30px 0
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333e7;
+    font-size: 16px;
+    height: 65px;
+    background-color:rgb(80, 101, 220);
+}
+
+.footer-span, .footer-contact, .footer__social {
+    display: none;
+}
+
+
+.menu {
+    display: none;
+}
+/* приховуємо чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+/* стилізуємо кнопку */
+.menu__btn {
+    position: relative;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
+/* додаємо "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(80, 101, 220);
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+    /* display: block; */
+    position: fixed;
+    top: -100%;
+    right: 0px;
+    width: 110%;
+    height: 28%;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+li > hr {
+    visibility: hidden;
+    position: relative;
+    margin: 0;
+    width: 35px;
+    background-color: blue;
+}
+
+/* элементи меню */
+.menu__item {
+    display: block;
+    color: #333333ec;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu__item:hover{
+    color: rgb(80, 101, 220);
+}
+.menu__item:hover ~ hr{
+    visibility: visible;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    top: 100px;
+}
+
+/* Для цього просто додамо властивість
+transition-duration: .25s наступним класам: */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    transition-duration: .45s;
+}
+.menu__box {
+    transition-duration: .45s;
+}
+.menu__item {
+    transition-duration: .45s;
+}
